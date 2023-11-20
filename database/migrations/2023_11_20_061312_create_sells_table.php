@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('books_price');
             $table->integer('quantity');
             $table->integer('total_price');
+            $table->date_create("now");
             $table->timestamps();
         });
     }
